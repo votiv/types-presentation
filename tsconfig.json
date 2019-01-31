@@ -14,19 +14,15 @@
     "forceConsistentCasingInFileNames": true,
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
     "noEmit": true,
     "jsx": "preserve",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": [
-    "src"
+    "./interfaces.ts"
   ],
   "exclude": [
-    "node_modules",
-    "build",
-    "src/setupTests.ts"
+    "node_modules"
   ]
 }

@@ -24,6 +24,7 @@
     ]
   },
   "rules": {
+    "arrow-parens": false,
     "class-name": true,
     "curly": true,
     "eofline": true,

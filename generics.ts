@@ -30,7 +30,7 @@ function getProperty<T, K extends keyof T>(obj: T, key: K): any {
   return obj[key];
 }
 
-const x = { a: 1, b: 2, c: 3, d: 4 };
+const x: any = { a: 1, b: 2, c: 3, d: 4 };
 
 console.log(getProperty(x, 'a'));
 console.log(getProperty(x, 'm'));
