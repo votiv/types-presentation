@@ -16,7 +16,8 @@
     "object-literal-sort-keys": false,
     "quotemark": [
       true,
-      "single"
+      "single",
+      "jsx-double"
     ],
     "ordered-imports": [
       false
@@ -29,12 +30,17 @@
     "object-literal-sort-keys": false,
     "quotemark": [
       true,
-      "single"
+      "single",
+      "jsx-double"
     ],
     "indent": [
       true,
       "spaces",
       2
+    ],
+    "jsx-curly-spacing": [
+      true,
+      "always"
     ],
     "max-line-length": [
       true,
@@ -61,7 +67,6 @@
     "trailing-comma": "never",
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-unused-variable": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": false,
@@ -74,14 +79,18 @@
       "check-open-brace",
       "check-whitespace"
     ],
+    "member-access": false,
     "radix": true,
-    "semicolon": true,
+    "semicolon": [
+      true,
+      "always",
+      "ignore-bound-class-methods"
+    ],
     "switch-default": true,
     "typedef": [
       true,
       "call-signature",
       "parameter",
-      "arrow-parameter",
       "property-declaration",
       "variable-declaration",
       "member-variable-declaration"
