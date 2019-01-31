@@ -13,4 +13,11 @@ interface IMyObjectData {
   model: string;
 }
 
-const carsResponse: IMyObject = await carsApi.getCars();
+let carsResponse!: IMyObject;
+
+const getCars: () => void = async () => {
+  carsResponse = await carsApi.getCars();
+  console.log('carsResponse', carsResponse);
+};
+
+getCars();
